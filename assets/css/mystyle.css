@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0px;
+}
+.b1{
+    border: 1px solid red;
+}
+
+/*common code start*/
+:root{
+    --primary-font: "Playfair Display", serif;
+    --secondary-font: "Open Sans", sans-serif;
+    --brand-color: #0ddbd1;
+    --Primary-color: rgb(66, 65, 65) ;
+    --secondary-color: rgb(76, 76, 76);
+    --color-white: rgb(255, 255, 255);
+    --color-black: #000;
+}
+.d-flex{
+    display: flex;
+}
+.direction{
+    flex-direction: column;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.container{
+    width: 98%;
+    height: 100%;
+    margin: 0px auto;
+}
+.container2{
+    width: 77%;
+    height: 100%;
+    margin: 0px auto;
+}
+a{
+    font-family: var(--secondary-font);
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+p, h1, h2, h3, h4, h5{
+    margin: 0px;
+    padding: 0px;
+}
+/*common code end*/
+
+/* header section start */
+header{
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/backgound.jpg);
+    margin-bottom: 20px;
+}
+/* header section end */
+/* nav section start */
+nav{
+    background-color: rgba( 255, 255, 255, 0.7);
+}
+.nav-brand a{
+    padding: 15px;
+    color: var(--color-black);
+    font-size: 31px;
+    font-weight: 700;
+}
+.nav-list ul {
+    padding: 10px;
+}
+.nav-list ul li a{
+    margin-top: 10px;
+    margin-left: 65px;
+    padding: 5px 10px;
+    color: var(--Primary-color);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.nav-list ul li a:hover{
+    border-radius: 6px;
+    background: var(--brand-color);
+    color: var(--color-white);
+}
+
+/* nav section end */
+/* banner section start */
+.banner{
+    margin-top: 300px;
+}
+.social-links{
+    flex: 1 1 150%;
+}
+.social-links ul li a i{
+    padding: 15px;
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.social-links ul li a i:hover{
+    border-radius: 50%;
+    background: var(--brand-color);
+    color: var(--color-white);
+}
+.banner-content{
+    flex: 1 1 120%;
+    text-align: right;
+    margin-right: 35px;
+}
+.banner-content h1{
+    font-family: var(--primary-font);
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--color-white);
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+.banner-content p{
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(218, 218, 218);
+    line-height: 1.5;
+    margin: 10px 0px;
+    padding-left: 8rem;
+}
+.banner-content a{
+    margin-top: 15px;
+    padding: 8px;
+    color: var(--color-white);
+    background: var(--brand-color);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.banner-content a:hover{
+    border-radius: 1px;
+    background: var(--color-black);
+    color: var(--color-white);
+}
+/* banner section end */
+/* attraction section start */
+.attraction{
+    margin-bottom: 80px;
+}
+.attraction-blogs{
+    flex: 1 1 50%;
+}
+.attraction-blogs .content{
+    margin-bottom: 40px;
+}
+.attraction-blogs .content .text{
+    flex: 1 1 80%;
+    padding-right: 15px;
+}
+.content .text span{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--brand-color);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.content .text p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.9;
+    letter-spacing: 2px;
+    color: var(--secondary-color);
+}
+.attraction-blogs .content .icon{
+    flex: 1 1 20%;
+    text-align: right;
+}
+.content .icon a i{
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-white);
+    padding: 20px;
+    background-color: var(--brand-color);   
+}
+#sail{
+    text-align: left;
+    padding-right: 15px;
+}
+.attraction-blogs img{
+    padding: 0px 15px;
+}
+.attraction-blogs .history{
+    padding: 0px 25px;
+    text-align: right;
+} 
+.attraction-blogs .history h3{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+} 
+.attraction-blogs .history p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    color: var(--secondary-color);
+}
+.attraction-blogs .history a{
+    margin-top: 15px;
+    padding: 8px;
+    color: var(--color-white);
+    background: var(--brand-color);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.attraction-blogs .history a:hover{
+    border-radius: 1px;
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+/* attraction section end */
+/* service section start */
+.service-section{
+    margin-bottom: 40px;
+    padding: 100px 0px;
+}
+.headline{
+    flex: 1 1 100%;
+    text-align: left;
+}
+.headline h4{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.service-blogs{
+    flex: 1 1 150%;
+    margin-left: 20px;
+}
+.service-item{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.service-item i{
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--color-black);
+    margin-bottom: 10px;
+}
+.service-item h5{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.5;
+    color: var(--brand-color);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.service-item  p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--secondary-color);
+} 
+/* service section end */
+/* News&Blog section start */
+.news-blog{
+    margin: 40px 0px;
+}
+.ourblog{
+    flex: 1 1 190%;
+    background-image: url(../images/b5.jpg);
+    background-size: cover;
+    background-position: 10%;
+    margin: 0px 10px;
+    padding: 170px 0px 170px 70px;
+}
+.ourblog span{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+.ourblog h4{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--color-white);
+} 
+.ourblog p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+    color: var(--color-white);
+    padding-right: 80px;
+}
+.ourblog a{
+    margin-top: 15px;
+    padding: 8px;
+    color: var(--color-white);
+    background: var(--brand-color);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.ourblog a:hover{
+    border-radius: 1px;
+    background: var(--color-black);
+    color: var(--color-white);
+}
+.newsheading{
+    flex: 1 1 100%;
+    text-align: left;
+    padding-top: 110px;
+}
+.newsheading h2{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+} 
+/* blogs */
+.blogs{
+    margin: 10px 0px;
+    padding: 10px;
+}
+.blog-content{
+    flex: 1 1 50%;
+    text-align: justify;
+    padding-top: 75px;
+    padding-left: 30px;
+}
+.blog-content h4{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--brand-color);
+} 
+.blog-content p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+    color: var(--color-black);
+    padding-right: 80px;
+}
+.blog-content a{
+    margin-top: 15px;
+    padding: 8px;
+    color: var(--color-white);
+    background: var(--brand-color);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.blog-content a:hover{
+    border-radius: 1px;
+    background: var(--color-black);
+    color: var(--color-white);
+}
+.blog-img{
+    flex: 1 1 50%;
+}
+.blog2{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+/* News&Blog section end */
+
+/* booking section start */
+.booking{
+    margin: 10px 0px;
+    background-image: linear-gradient( rgba(5, 5, 6, 0.6), rgba(6, 5, 7, 0.6)),url(../images/cc1.jpg);
+    background-position: 10%;
+    padding: 100px;
+    text-align: center;
+}
+.booking h1{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.5;
+    color: var(--color-white);
+    padding: 10px;
+} 
+.booking p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+    color: var(--color-white);
+}
+.booking a{
+    margin-top: 15px;
+    padding: 8px;
+    color: var(--color-white);
+    background: var(--brand-color);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.booking a:hover{
+    border-radius: 1px;
+    background: var(--color-white);
+    color: var(--color-black);
+}
+/* booking section end */
+/* about-us section start */
+.about-us{
+    margin: 20px 0px;
+    padding: 40px 10px;
+}
+
+.aboutus-blogs{
+    flex: 1 1 50%;
+    flex-direction: column;
+
+}
+.aboutus-blogs .clients{
+    flex: 1 1 50%;
+    margin-top: 15px;
+}
+.aboutus-blogs .clients .client-img{
+    flex: 1 1 30%;
+}
+.aboutus-blogs .clients .client-img{
+    flex: 1 1 30%;
+}
+
+.aboutus-blogs .clients .comment{
+    flex: 1 1 60%;
+    margin-left: 10px;
+}
+.aboutus-blogs .clients .comment p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--primary-color);
+}
+.aboutus-blogs .clients .comment h4{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--brand-color);
+} 
+.aboutus-blogs .about-heading {
+    margin: 0px 10px;
+}
+.aboutus-blogs .about-heading h1{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 67px;
+    line-height: 1.5;
+    color: var(--color-black);
+    padding: 10px;
+}
+
+/* about-us section end */
+/* big-footer section start */
+.big-footer{
+    background: #000;
+}
+.bfooter-content{
+    flex: 1 1 90%;
+    text-align: center;
+    padding: 70px 30px;
+}
+
+.bfooter-content h3{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--brand-color);
+} 
+.bfooter-content p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--color-white);
+}
+
+
+.bfooter-scroll{
+    flex: 1 1 10%;
+    text-align: center;
+}
+.bfooter-scroll a i{
+    padding: 10px;
+    background-color: var(--color-white);
+    color: #000;
+    font-size: 16px;
+    font-weight: 700px;
+}
+
+
+.bfooter-content a i{
+    padding: 10px;
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.bfooter-content a i:hover{
+    border-radius: 50%;
+    background: var(--brand-color);
+    color: var(--color-white);
+}
+/* big-footer section end */
+/* footer  section end */
+footer{
+    background: #333232;
+    padding: 20px;
+}
+footer .content{
+    flex: 1 1 50%;
+}
+.content p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--color-white);
+}
+.content span{
+    color: var(--brand-color);
+}
+
+footer .author{
+    flex: 1 1 50%;
+    text-align: right;
+}
+.author p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--color-white);
+}
+.author span{
+    color: var(--brand-color);
+}
+/* footer  section end */
